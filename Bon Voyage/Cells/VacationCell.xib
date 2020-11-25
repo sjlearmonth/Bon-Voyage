@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="VacationCell" rowHeight="220" id="KGk-i7-Jjw" customClass="VacationCell" customModule="Bon_Voyage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ec-qK-xIa" customClass="CardView" customModule="Bon_Voyage" customModuleProvider="target">
+                        <rect key="frame" x="8" y="0.0" width="366" height="212"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-beach-filled" translatesAutoresizingMaskIntoConstraints="NO" id="4wl-YO-nWR">
+                                <rect key="frame" x="0.0" y="0.0" width="366" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="13A-Jq-q1O"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TitleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5i-2D-xZq">
+                                <rect key="frame" x="12" y="175" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1,999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chc-g2-7HI">
+                                <rect key="frame" x="304" y="178" width="50" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4wl-YO-nWR" firstAttribute="leading" secondItem="5ec-qK-xIa" secondAttribute="leading" id="2le-Oa-IkS"/>
+                            <constraint firstAttribute="bottom" secondItem="g5i-2D-xZq" secondAttribute="bottom" constant="16" id="Bzb-Se-NAT"/>
+                            <constraint firstAttribute="trailing" secondItem="4wl-YO-nWR" secondAttribute="trailing" id="JnW-dd-yWy"/>
+                            <constraint firstAttribute="trailing" secondItem="Chc-g2-7HI" secondAttribute="trailing" constant="12" id="Z1A-vF-pad"/>
+                            <constraint firstItem="4wl-YO-nWR" firstAttribute="top" secondItem="5ec-qK-xIa" secondAttribute="top" id="g6x-Pu-Imk"/>
+                            <constraint firstAttribute="bottom" secondItem="Chc-g2-7HI" secondAttribute="bottom" constant="16" id="h3L-3L-fc6"/>
+                            <constraint firstItem="g5i-2D-xZq" firstAttribute="leading" secondItem="5ec-qK-xIa" secondAttribute="leading" constant="12" id="zGc-tT-4og"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="border_blue"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="5ec-qK-xIa" secondAttribute="trailing" constant="8" id="43V-yq-tan"/>
+                    <constraint firstAttribute="bottom" secondItem="5ec-qK-xIa" secondAttribute="bottom" constant="8" id="7Z3-e7-jdo"/>
+                    <constraint firstItem="5ec-qK-xIa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="8gL-FL-xHp"/>
+                    <constraint firstItem="5ec-qK-xIa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CoC-wU-AvP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="mainImage" destination="4wl-YO-nWR" id="ogh-41-gGR"/>
+                <outlet property="priceLabel" destination="Chc-g2-7HI" id="ntK-Hn-Y8t"/>
+                <outlet property="titleLabel" destination="g5i-2D-xZq" id="lta-ov-ClH"/>
+            </connections>
+            <point key="canvasLocation" x="92.753623188405811" y="162.72321428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="background-beach-filled" width="414" height="896"/>
+        <namedColor name="border_blue">
+            <color red="0.3843137254901961" green="0.66666666666666663" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

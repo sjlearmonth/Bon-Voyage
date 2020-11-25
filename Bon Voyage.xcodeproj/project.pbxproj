@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3299DBA3A0B59DB1A9D22B79 /* Pods_Bon_Voyage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0401F1C0C08E83EBC8D55F7 /* Pods_Bon_Voyage.framework */; };
+		C405B5712562DCBF003CFDF4 /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C405B5702562DCBF003CFDF4 /* CheckoutVC.swift */; };
+		C405B5762562F0D0003CFDF4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C405B5752562F0D0003CFDF4 /* Constants.swift */; };
+		C45508C02562D8A20027A80F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C45508BF2562D8A20027A80F /* SDWebImage */; };
+		C46A80F625013D07009FBA5A /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A80F525013D07009FBA5A /* DemoData.swift */; };
+		C46A80FB25013D9A009FBA5A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A80F825013D9A009FBA5A /* RoundedButton.swift */; };
+		C46A80FC25013D9A009FBA5A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A80F925013D9A009FBA5A /* CardView.swift */; };
+		C46A80FD25013D9A009FBA5A /* ShadowCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A80FA25013D9A009FBA5A /* ShadowCardView.swift */; };
+		C46A8100250141AA009FBA5A /* LogInRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A80FE250141AA009FBA5A /* LogInRegisterVC.swift */; };
+		C46A8101250141AA009FBA5A /* LogInRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C46A80FF250141AA009FBA5A /* LogInRegisterVC.xib */; };
+		C46A81052502A42C009FBA5A /* Vacation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A81042502A42C009FBA5A /* Vacation.swift */; };
+		C46A81092502A8A7009FBA5A /* VacationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46A81072502A8A7009FBA5A /* VacationCell.swift */; };
+		C46A810A2502A8A7009FBA5A /* VacationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C46A81082502A8A7009FBA5A /* VacationCell.xib */; };
+		C46DF8EE24FEB5AF0028F37B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46DF8ED24FEB5AF0028F37B /* AppDelegate.swift */; };
+		C46DF8F024FEB5AF0028F37B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46DF8EF24FEB5AF0028F37B /* SceneDelegate.swift */; };
+		C46DF8F224FEB5AF0028F37B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46DF8F124FEB5AF0028F37B /* HomeVC.swift */; };
+		C46DF8F524FEB5AF0028F37B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46DF8F324FEB5AF0028F37B /* Main.storyboard */; };
+		C46DF8F724FEB5B00028F37B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C46DF8F624FEB5B00028F37B /* Assets.xcassets */; };
+		C46DF8FA24FEB5B00028F37B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46DF8F824FEB5B00028F37B /* LaunchScreen.storyboard */; };
+		C4CAA47C25643C7F008D0FE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4CAA47B25643C7F008D0FE8 /* GoogleService-Info.plist */; };
+		C4CAA48A25644806008D0FE8 /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CAA48925644806008D0FE8 /* ViewController+Ext.swift */; };
+		C4CAA48D25644985008D0FE8 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CAA48C25644985008D0FE8 /* String+Ext.swift */; };
+		C4F184E62507E99600E32E4B /* Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F184E52507E99600E32E4B /* Integer.swift */; };
+		C4F184E82507EBF900E32E4B /* VacationDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F184E72507EBF900E32E4B /* VacationDetailsVC.swift */; };
+		C4F184EA25091F1C00E32E4B /* ThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F184E925091F1C00E32E4B /* ThumbnailCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8683F6E43D9C1048FB7CF991 /* Pods-Bon Voyage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bon Voyage.release.xcconfig"; path = "Target Support Files/Pods-Bon Voyage/Pods-Bon Voyage.release.xcconfig"; sourceTree = "<group>"; };
+		93C9AD96F6766EB0120CB9C2 /* Pods-Bon Voyage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bon Voyage.debug.xcconfig"; path = "Target Support Files/Pods-Bon Voyage/Pods-Bon Voyage.debug.xcconfig"; sourceTree = "<group>"; };
+		C405B5702562DCBF003CFDF4 /* CheckoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutVC.swift; sourceTree = "<group>"; };
+		C405B5752562F0D0003CFDF4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C46A80F525013D07009FBA5A /* DemoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
+		C46A80F825013D9A009FBA5A /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		C46A80F925013D9A009FBA5A /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C46A80FA25013D9A009FBA5A /* ShadowCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowCardView.swift; sourceTree = "<group>"; };
+		C46A80FE250141AA009FBA5A /* LogInRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInRegisterVC.swift; sourceTree = "<group>"; };
+		C46A80FF250141AA009FBA5A /* LogInRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInRegisterVC.xib; sourceTree = "<group>"; };
+		C46A81042502A42C009FBA5A /* Vacation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vacation.swift; sourceTree = "<group>"; };
+		C46A81072502A8A7009FBA5A /* VacationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationCell.swift; sourceTree = "<group>"; };
+		C46A81082502A8A7009FBA5A /* VacationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VacationCell.xib; sourceTree = "<group>"; };
+		C46DF8EA24FEB5AF0028F37B /* Bon Voyage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bon Voyage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C46DF8ED24FEB5AF0028F37B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C46DF8EF24FEB5AF0028F37B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C46DF8F124FEB5AF0028F37B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C46DF8F424FEB5AF0028F37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C46DF8F624FEB5B00028F37B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C46DF8F924FEB5B00028F37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C46DF8FB24FEB5B00028F37B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4CAA47B25643C7F008D0FE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C4CAA48925644806008D0FE8 /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
+		C4CAA48C25644985008D0FE8 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		C4F184E52507E99600E32E4B /* Integer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Integer.swift; sourceTree = "<group>"; };
+		C4F184E72507EBF900E32E4B /* VacationDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationDetailsVC.swift; sourceTree = "<group>"; };
+		C4F184E925091F1C00E32E4B /* ThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCell.swift; sourceTree = "<group>"; };
+		D0401F1C0C08E83EBC8D55F7 /* Pods_Bon_Voyage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bon_Voyage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C46DF8E724FEB5AF0028F37B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45508C02562D8A20027A80F /* SDWebImage in Frameworks */,
+				3299DBA3A0B59DB1A9D22B79 /* Pods_Bon_Voyage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C45508BE2562D8910027A80F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0401F1C0C08E83EBC8D55F7 /* Pods_Bon_Voyage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C46A80F725013D71009FBA5A /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				C46A80F925013D9A009FBA5A /* CardView.swift */,
+				C46A80F825013D9A009FBA5A /* RoundedButton.swift */,
+				C46A80FA25013D9A009FBA5A /* ShadowCardView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		C46A8102250141C9009FBA5A /* LogInRegister */ = {
+			isa = PBXGroup;
+			children = (
+				C46A80FE250141AA009FBA5A /* LogInRegisterVC.swift */,
+				C46A80FF250141AA009FBA5A /* LogInRegisterVC.xib */,
+			);
+			path = LogInRegister;
+			sourceTree = "<group>";
+		};
+		C46A81032502A41C009FBA5A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C46A81042502A42C009FBA5A /* Vacation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C46A81062502A87A009FBA5A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C46A81072502A8A7009FBA5A /* VacationCell.swift */,
+				C46A81082502A8A7009FBA5A /* VacationCell.xib */,
+				C4F184E925091F1C00E32E4B /* ThumbnailCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C46DF8E124FEB5AF0028F37B = {
+			isa = PBXGroup;
+			children = (
+				C46DF8EC24FEB5AF0028F37B /* Bon Voyage */,
+				C46DF8EB24FEB5AF0028F37B /* Products */,
+				C45508BE2562D8910027A80F /* Frameworks */,
+				F162ADB7750F316C29251BE3 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C46DF8EB24FEB5AF0028F37B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C46DF8EA24FEB5AF0028F37B /* Bon Voyage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C46DF8EC24FEB5AF0028F37B /* Bon Voyage */ = {
+			isa = PBXGroup;
+			children = (
+				C405B5752562F0D0003CFDF4 /* Constants.swift */,
+				C4F184E42507E97600E32E4B /* Extensions */,
+				C46A81062502A87A009FBA5A /* Cells */,
+				C46A81032502A41C009FBA5A /* Models */,
+				C46A80F725013D71009FBA5A /* Custom Views */,
+				C46A8102250141C9009FBA5A /* LogInRegister */,
+				C46DF8F124FEB5AF0028F37B /* HomeVC.swift */,
+				C4F184E72507EBF900E32E4B /* VacationDetailsVC.swift */,
+				C405B5702562DCBF003CFDF4 /* CheckoutVC.swift */,
+				C46A80F525013D07009FBA5A /* DemoData.swift */,
+				C46DF8ED24FEB5AF0028F37B /* AppDelegate.swift */,
+				C46DF8EF24FEB5AF0028F37B /* SceneDelegate.swift */,
+				C46DF8F324FEB5AF0028F37B /* Main.storyboard */,
+				C46DF8F624FEB5B00028F37B /* Assets.xcassets */,
+				C4CAA47B25643C7F008D0FE8 /* GoogleService-Info.plist */,
+				C46DF8F824FEB5B00028F37B /* LaunchScreen.storyboard */,
+				C46DF8FB24FEB5B00028F37B /* Info.plist */,
+			);
+			path = "Bon Voyage";
+			sourceTree = "<group>";
+		};
+		C4F184E42507E97600E32E4B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C4F184E52507E99600E32E4B /* Integer.swift */,
+				C4CAA48925644806008D0FE8 /* ViewController+Ext.swift */,
+				C4CAA48C25644985008D0FE8 /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F162ADB7750F316C29251BE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93C9AD96F6766EB0120CB9C2 /* Pods-Bon Voyage.debug.xcconfig */,
+				8683F6E43D9C1048FB7CF991 /* Pods-Bon Voyage.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C46DF8E924FEB5AF0028F37B /* Bon Voyage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C46DF91424FEB5B00028F37B /* Build configuration list for PBXNativeTarget "Bon Voyage" */;
+			buildPhases = (
+				377FDD98E3582A5CF964705A /* [CP] Check Pods Manifest.lock */,
+				C46DF8E624FEB5AF0028F37B /* Sources */,
+				C46DF8E724FEB5AF0028F37B /* Frameworks */,
+				C46DF8E824FEB5AF0028F37B /* Resources */,
+				DDD916D990A9D2D1627C3F80 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bon Voyage";
+			packageProductDependencies = (
+				C45508BF2562D8A20027A80F /* SDWebImage */,
+			);
+			productName = "Bon Voyage";
+			productReference = C46DF8EA24FEB5AF0028F37B /* Bon Voyage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C46DF8E224FEB5AF0028F37B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					C46DF8E924FEB5AF0028F37B = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = C46DF8E524FEB5AF0028F37B /* Build configuration list for PBXProject "Bon Voyage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C46DF8E124FEB5AF0028F37B;
+			packageReferences = (
+				C46A810B2502ADCD009FBA5A /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = C46DF8EB24FEB5AF0028F37B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C46DF8E924FEB5AF0028F37B /* Bon Voyage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C46DF8E824FEB5AF0028F37B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46DF8FA24FEB5B00028F37B /* LaunchScreen.storyboard in Resources */,
+				C46DF8F724FEB5B00028F37B /* Assets.xcassets in Resources */,
+				C46DF8F524FEB5AF0028F37B /* Main.storyboard in Resources */,
+				C46A810A2502A8A7009FBA5A /* VacationCell.xib in Resources */,
+				C46A8101250141AA009FBA5A /* LogInRegisterVC.xib in Resources */,
+				C4CAA47C25643C7F008D0FE8 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		377FDD98E3582A5CF964705A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bon Voyage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDD916D990A9D2D1627C3F80 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bon Voyage/Pods-Bon Voyage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bon Voyage/Pods-Bon Voyage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bon Voyage/Pods-Bon Voyage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C46DF8E624FEB5AF0028F37B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C405B5712562DCBF003CFDF4 /* CheckoutVC.swift in Sources */,
+				C46A80F625013D07009FBA5A /* DemoData.swift in Sources */,
+				C46A80FB25013D9A009FBA5A /* RoundedButton.swift in Sources */,
+				C4CAA48D25644985008D0FE8 /* String+Ext.swift in Sources */,
+				C46A81052502A42C009FBA5A /* Vacation.swift in Sources */,
+				C46DF8F224FEB5AF0028F37B /* HomeVC.swift in Sources */,
+				C405B5762562F0D0003CFDF4 /* Constants.swift in Sources */,
+				C46DF8EE24FEB5AF0028F37B /* AppDelegate.swift in Sources */,
+				C46A80FD25013D9A009FBA5A /* ShadowCardView.swift in Sources */,
+				C46A81092502A8A7009FBA5A /* VacationCell.swift in Sources */,
+				C46A80FC25013D9A009FBA5A /* CardView.swift in Sources */,
+				C46DF8F024FEB5AF0028F37B /* SceneDelegate.swift in Sources */,
+				C4F184EA25091F1C00E32E4B /* ThumbnailCell.swift in Sources */,
+				C4F184E62507E99600E32E4B /* Integer.swift in Sources */,
+				C4F184E82507EBF900E32E4B /* VacationDetailsVC.swift in Sources */,
+				C4CAA48A25644806008D0FE8 /* ViewController+Ext.swift in Sources */,
+				C46A8100250141AA009FBA5A /* LogInRegisterVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C46DF8F324FEB5AF0028F37B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C46DF8F424FEB5AF0028F37B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C46DF8F824FEB5B00028F37B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C46DF8F924FEB5B00028F37B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C46DF91224FEB5B00028F37B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C46DF91324FEB5B00028F37B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C46DF91524FEB5B00028F37B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93C9AD96F6766EB0120CB9C2 /* Pods-Bon Voyage.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 555CBMTQ4N;
+				INFOPLIST_FILE = "Bon Voyage/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sjlearmonth.Bon-Voyage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C46DF91624FEB5B00028F37B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8683F6E43D9C1048FB7CF991 /* Pods-Bon Voyage.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 555CBMTQ4N;
+				INFOPLIST_FILE = "Bon Voyage/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sjlearmonth.Bon-Voyage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C46DF8E524FEB5AF0028F37B /* Build configuration list for PBXProject "Bon Voyage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C46DF91224FEB5B00028F37B /* Debug */,
+				C46DF91324FEB5B00028F37B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C46DF91424FEB5B00028F37B /* Build configuration list for PBXNativeTarget "Bon Voyage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C46DF91524FEB5B00028F37B /* Debug */,
+				C46DF91624FEB5B00028F37B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C46A810B2502ADCD009FBA5A /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C45508BF2562D8A20027A80F /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C46A810B2502ADCD009FBA5A /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C46DF8E224FEB5AF0028F37B /* Project object */;
+}
