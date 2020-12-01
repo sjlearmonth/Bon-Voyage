@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseFunctions
 
 class LogInRegisterVC: UIViewController {
 
@@ -82,10 +83,18 @@ class LogInRegisterVC: UIViewController {
                 return
             }
             
-            self.dismiss(animated: true)
+            // Name it: createStripeCustomer
+            Functions.functions().httpsCallable("createStripeCustomer").call( ["email":email,
+                                                                               "metadata":[
+                                                                                "uid" :  result?.user.uid]]) { (result, error) in
+                
+                if let error = error {
+                    debugPrint("DEBUG: error is \(error.localizedDescription)")
+                    return
+                }
+                
+                self.dismiss(animated: true)
+            }
         }
-        
-        
     }
-    
 }

@@ -1,87 +1,118 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin')
+const stripe = require('stripe')("sk_test_51HtbmNLGVtvBdffSg3qsItHh0aEn7yhmsGiWU6So8mhVxsxbxIZym9x1IHjvZ6nnXkopVsDmN7ywHHqXxHj37cHM00kYschU4p")
+
 admin.initializeApp()
 
 const auth = admin.auth()
 
-// Create and Deploy Your First Cloud Functions
-// https://firebase.google.com/docs/functions/write-firebase-functions
+exports.createStripeCustomer = functions.https.onCall( async (data, context) => {
 
-exports.helloWorld = functions.https.onRequest((request, response) => {
-  functions.logger.info("Hello logs!", {structuredData: true});
-  response.send("Hello from Stephen J Learmonth!");
-});
+  const uid = context.auth.uid
+  const email = data.email
+  const metadata = data.metadata
 
-exports.deleteUser = functions.https.onRequest( async (request, response) => {
+  if (uid === null) {
+    throw new functions.https.HttpsError('internal', 'Illegal access attempt')
+  }
 
-  const email = request.body.email;
-  
-  const user = await auth.getUserByEmail(email).catch( error => {
-    console.log(error)
-    response.status(500).send('Unable to get user', error)
+  return stripe.customers.create({description: 'First Test Customer', email: email, metadata: metadata,
   })
-
-  auth.deleteUser(user.uid).then( () => {
-    response.status(200).send('User successfully deleted.')
-  }).catch( error => {
-    response.status(500).send('Error attempting to delete user', error)
+  .then(customer => {
+  return customer["id"]
+  })
+  .then( customerId => {
+    admin.firestore().collection('users').doc(uid).set(
+      {
+        stripeId: customerId,
+        email: email,
+        id: uid
+      }
+    )
+  })
+  .catch( error => {
+    throw new functions.https.HttpsError('Internal', 'Unable to create Stripe customer')
   })
 })
 
-// OnCreate
-exports.vacationAdded = functions.firestore
-  .document("vacations/{vacationId}")
-  .onCreate((snap) => {
+// // Create and Deploy Your First Cloud Functions
+// // https://firebase.google.com/docs/functions/write-firebase-functions
 
-    // Any time a document is created in the 'vacations' collection, this function will be called.
+// exports.helloWorld = functions.https.onRequest((request, response) => {
+//   functions.logger.info("Hello logs!", {structuredData: true});
+//   response.send("Hello from Stephen J Learmonth!");
+// });
 
-    // The firestore document data in a JSON object.
-    const data = snap.data();
+// exports.deleteUser = functions.https.onRequest( async (request, response) => {
 
-    functions.logger.log('New Vacation: ', data)
+//   const email = request.body.email;
+  
+//   const user = await auth.getUserByEmail(email).catch( error => {
+//     console.log(error)
+//     response.status(500).send('Unable to get user', error)
+//   })
 
-    // Do what you need to do with this data.
+//   auth.deleteUser(user.uid).then( () => {
+//     response.status(200).send('User successfully deleted.')
+//   }).catch( error => {
+//     response.status(500).send('Error attempting to delete user', error)
+//   })
+// })
 
-    return null
+// // OnCreate
+// exports.vacationAdded = functions.firestore
+//   .document("vacations/{vacationId}")
+//   .onCreate((snap) => {
 
-  });
+//     // Any time a document is created in the 'vacations' collection, this function will be called.
 
-// On Update
-exports.vacationUpdated = functions.firestore
-  .document("vacations/{vacationId}")
-  .onUpdate((change) => {
+//     // The firestore document data in a JSON object.
+//     const data = snap.data();
 
-    // Any time a document is updated in the 'vacations' collection, this function will be called.
+//     functions.logger.log('New Vacation: ', data)
 
-    // The firestore document object BEFORE.
-    const beforeData = change.before.data()
+//     // Do what you need to do with this data.
 
-    // The firestore document object NOW.
-    const data = change.after.data();
+//     return null
 
-    functions.logger.log('Old Vacation: ', beforeData)
-    functions.logger.log('New Vacation: ', data)
+//   });
 
-    // Do what you need to do with this data.
+// // On Update
+// exports.vacationUpdated = functions.firestore
+//   .document("vacations/{vacationId}")
+//   .onUpdate((change) => {
 
-    return null
+//     // Any time a document is updated in the 'vacations' collection, this function will be called.
 
-  });
+//     // The firestore document object BEFORE.
+//     const beforeData = change.before.data()
 
-// On Delete
-exports.vacationDeleted = functions.firestore
-  .document("vacations/{vacationId}")
-  .onDelete((snap) => {
+//     // The firestore document object NOW.
+//     const data = change.after.data();
 
-    // Any time a document is deleted in the 'vacations' collection, this function will be called.
+//     functions.logger.log('Old Vacation: ', beforeData)
+//     functions.logger.log('New Vacation: ', data)
 
-    // The firestore document that was just deleted.
-    const data = snap.data();
+//     // Do what you need to do with this data.
 
-    functions.logger.log('Deleted Vacation: ', data)
+//     return null
 
-    // Do what you need to do with this data.
+//   });
 
-    return null
+// // On Delete
+// exports.vacationDeleted = functions.firestore
+//   .document("vacations/{vacationId}")
+//   .onDelete((snap) => {
 
-  });
+//     // Any time a document is deleted in the 'vacations' collection, this function will be called.
+
+//     // The firestore document that was just deleted.
+//     const data = snap.data();
+
+//     functions.logger.log('Deleted Vacation: ', data)
+
+//     // Do what you need to do with this data.
+
+//     return null
+
+//   });

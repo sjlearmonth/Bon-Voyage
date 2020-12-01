@@ -7,5 +7,7 @@ target 'Bon Voyage' do
 
   # Pods for Bon Voyage
   pod 'Firebase/Auth'
-
+  pod 'Firebase/Functions'
+  pod 'Firebase/Firestore'
+  pod 'Stripe'
 end
