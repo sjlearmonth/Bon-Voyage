@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseFunctions
+import FirebaseFirestore
 
 class LogInRegisterVC: UIViewController {
 
@@ -83,6 +84,19 @@ class LogInRegisterVC: UIViewController {
                 return
             }
             
+            let log: [String: Any] = [
+                "msg": "A new user signed up",
+                "timestamp": Timestamp()
+            ]
+            
+            Firestore.firestore().collection("logs").addDocument(data: log) { error in
+                if let error = error {
+                    print(error)
+                } else {
+                    print("Log Successfully Added")
+                }
+            }
+            
             // Name it: createStripeCustomer
             Functions.functions().httpsCallable("createStripeCustomer").call( ["email":email,
                                                                                "metadata":[
@@ -91,6 +105,20 @@ class LogInRegisterVC: UIViewController {
                 if let error = error {
                     debugPrint("DEBUG: error is \(error.localizedDescription)")
                     return
+                }
+                
+                guard let uid = Auth.auth().currentUser?.uid else { return }
+                Firestore.firestore().collection("users").document(uid).getDocument { (snapshot, error) in
+                    
+                    if let error = error {
+                        debugPrint(error.localizedDescription)
+                        return
+                    }
+                    
+                    guard let data = snapshot?.data() else { return }
+                    
+                    print(data)
+                    
                 }
                 
                 self.dismiss(animated: true)
