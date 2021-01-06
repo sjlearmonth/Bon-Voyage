@@ -35,6 +35,29 @@ exports.createStripeCustomer = functions.https.onCall( async (data, context) => 
   })
 })
 
+exports.createEphemeralKey = functions.https.onCall(async (data, context) => {
+
+  const customerId = data.customer_id;
+  const stripeVersion = data.stripe_version;
+  const uid = context.auth.uid;
+
+  if (uid == null) {
+    console.log('Illegal access attempt due to unauthenticated user access attempt')
+    throw new functions.https.HttpsError('internal', 'Illegal access attempt');
+  }
+
+  return stripe.ephemeralKeys.create (
+    { customer: customerId },
+    { stripe_version: stripeVersion }
+  ).then((key) => {
+    return key
+  }).catch( (error) => {
+    functions.logger.log('Error creating ephemeral key', error)
+    throw new functions.https.HttpsError('internal', 'Unable to create ephemeral key' + error)
+  })
+
+})
+
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
 

@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import Stripe
 
 class HomeVC: UIViewController {
     
@@ -14,6 +15,8 @@ class HomeVC: UIViewController {
     
     var vacations = [Vacation]()
     var selectedVacation: Vacation?
+    
+    var paymentContext: STPPaymentContext!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +36,9 @@ class HomeVC: UIViewController {
                 logInVC.modalPresentationStyle = .fullScreen
                 self.present(logInVC, animated: true)
             } else {
-                // Stay here
+                UserManager.instance.getCurrentUser {
+                    self.setupStripe()
+                }
             }
         }
 
@@ -65,6 +70,7 @@ class HomeVC: UIViewController {
         
         let manageCreditCards = UIAlertAction(title: "Manage Credit Cards", style: .default) { (action) in
             // Display Stripe Widget
+            self.paymentContext.pushPaymentOptionsViewController()
         }
         
         let manageBankAccounts = UIAlertAction(title: "Manage Bank Accounts", style: .default) { (action) in
@@ -79,6 +85,18 @@ class HomeVC: UIViewController {
         userActionSheet.addAction(closeAlertAction)
         
         present(userActionSheet, animated: true)
+    }
+    
+    func setupStripe() {
+        
+        Wallet.instance.customerContext = STPCustomerContext(keyProvider: StripeAPIClient())
+        
+        let config = STPPaymentConfiguration.shared
+        paymentContext = STPPaymentContext(customerContext: Wallet.instance.customerContext,
+                                           configuration: config,
+                                           theme: .defaultTheme)
+        
+        paymentContext.hostViewController = self
     }
 }
 

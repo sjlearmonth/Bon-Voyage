@@ -307,13 +307,13 @@ PODS:
   - nanopb/decode (1.30906.0)
   - nanopb/encode (1.30906.0)
   - PromisesObjC (1.2.10)
-  - Stripe (19.4.0)
+  - Stripe (21.1.0)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
   - Firebase/Functions
-  - Stripe
+  - Stripe (~> 21.1)
 
 SPEC REPOS:
   trunk:
@@ -352,8 +352,8 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
-  Stripe: 92f1c73a9dbd3c54277ed06a1fea6e08f20414c6
+  Stripe: 006b519b33936ebd9508bd2ade2311fdbe8bbd4c
 
-PODFILE CHECKSUM: bd38b51a84f9785075df34c82f9693737a044a7a
+PODFILE CHECKSUM: 9e950dc0c8502516a1a7dd8d869a253d4a76799d
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0

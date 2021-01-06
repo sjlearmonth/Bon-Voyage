@@ -26,6 +26,11 @@
 		C46DF8F524FEB5AF0028F37B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46DF8F324FEB5AF0028F37B /* Main.storyboard */; };
 		C46DF8F724FEB5B00028F37B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C46DF8F624FEB5B00028F37B /* Assets.xcassets */; };
 		C46DF8FA24FEB5B00028F37B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46DF8F824FEB5B00028F37B /* LaunchScreen.storyboard */; };
+		C4817C2525A606FE002A284E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4817C2425A606FE002A284E /* User.swift */; };
+		C4817C2925A608D5002A284E /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4817C2825A608D5002A284E /* UserManager.swift */; };
+		C4817C2F25A61479002A284E /* StripeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4817C2E25A61479002A284E /* StripeAPIClient.swift */; };
+		C4817C3225A619B9002A284E /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4817C3125A619B9002A284E /* Wallet.swift */; };
+		C4817C4A25A6299D002A284E /* FeesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4817C4925A6299D002A284E /* FeesCalculator.swift */; };
 		C4CAA47C25643C7F008D0FE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4CAA47B25643C7F008D0FE8 /* GoogleService-Info.plist */; };
 		C4CAA48A25644806008D0FE8 /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CAA48925644806008D0FE8 /* ViewController+Ext.swift */; };
 		C4CAA48D25644985008D0FE8 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CAA48C25644985008D0FE8 /* String+Ext.swift */; };
@@ -56,6 +61,11 @@
 		C46DF8F624FEB5B00028F37B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C46DF8F924FEB5B00028F37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C46DF8FB24FEB5B00028F37B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4817C2425A606FE002A284E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C4817C2825A608D5002A284E /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		C4817C2E25A61479002A284E /* StripeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeAPIClient.swift; sourceTree = "<group>"; };
+		C4817C3125A619B9002A284E /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		C4817C4925A6299D002A284E /* FeesCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesCalculator.swift; sourceTree = "<group>"; };
 		C4CAA47B25643C7F008D0FE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C4CAA48925644806008D0FE8 /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
 		C4CAA48C25644985008D0FE8 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
@@ -109,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				C46A81042502A42C009FBA5A /* Vacation.swift */,
+				C4817C2425A606FE002A284E /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -144,6 +155,8 @@
 		C46DF8EC24FEB5AF0028F37B /* Bon Voyage */ = {
 			isa = PBXGroup;
 			children = (
+				C4817C2C25A61428002A284E /* Stripe */,
+				C4817C2725A608BF002A284E /* Services */,
 				C405B5752562F0D0003CFDF4 /* Constants.swift */,
 				C4F184E42507E97600E32E4B /* Extensions */,
 				C46A81062502A87A009FBA5A /* Cells */,
@@ -163,6 +176,24 @@
 				C46DF8FB24FEB5B00028F37B /* Info.plist */,
 			);
 			path = "Bon Voyage";
+			sourceTree = "<group>";
+		};
+		C4817C2725A608BF002A284E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C4817C2825A608D5002A284E /* UserManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C4817C2C25A61428002A284E /* Stripe */ = {
+			isa = PBXGroup;
+			children = (
+				C4817C2E25A61479002A284E /* StripeAPIClient.swift */,
+				C4817C3125A619B9002A284E /* Wallet.swift */,
+				C4817C4925A6299D002A284E /* FeesCalculator.swift */,
+			);
+			path = Stripe;
 			sourceTree = "<group>";
 		};
 		C4F184E42507E97600E32E4B /* Extensions */ = {
@@ -309,7 +340,10 @@
 			files = (
 				C405B5712562DCBF003CFDF4 /* CheckoutVC.swift in Sources */,
 				C46A80F625013D07009FBA5A /* DemoData.swift in Sources */,
+				C4817C2925A608D5002A284E /* UserManager.swift in Sources */,
 				C46A80FB25013D9A009FBA5A /* RoundedButton.swift in Sources */,
+				C4817C4A25A6299D002A284E /* FeesCalculator.swift in Sources */,
+				C4817C2F25A61479002A284E /* StripeAPIClient.swift in Sources */,
 				C4CAA48D25644985008D0FE8 /* String+Ext.swift in Sources */,
 				C46A81052502A42C009FBA5A /* Vacation.swift in Sources */,
 				C46DF8F224FEB5AF0028F37B /* HomeVC.swift in Sources */,
@@ -320,7 +354,9 @@
 				C46A80FC25013D9A009FBA5A /* CardView.swift in Sources */,
 				C46DF8F024FEB5AF0028F37B /* SceneDelegate.swift in Sources */,
 				C4F184EA25091F1C00E32E4B /* ThumbnailCell.swift in Sources */,
+				C4817C3225A619B9002A284E /* Wallet.swift in Sources */,
 				C4F184E62507E99600E32E4B /* Integer.swift in Sources */,
+				C4817C2525A606FE002A284E /* User.swift in Sources */,
 				C4F184E82507EBF900E32E4B /* VacationDetailsVC.swift in Sources */,
 				C4CAA48A25644806008D0FE8 /* ViewController+Ext.swift in Sources */,
 				C46A8100250141AA009FBA5A /* LogInRegisterVC.swift in Sources */,

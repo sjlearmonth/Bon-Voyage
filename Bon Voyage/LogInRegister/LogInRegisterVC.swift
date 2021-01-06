@@ -100,26 +100,15 @@ class LogInRegisterVC: UIViewController {
             // Name it: createStripeCustomer
             Functions.functions().httpsCallable("createStripeCustomer").call( ["email":email,
                                                                                "metadata":[
-                                                                                "uid" :  result?.user.uid]]) { (result, error) in
+                                                                               "uid" :  result?.user.uid]]) { (result, error) in
                 
                 if let error = error {
                     debugPrint("DEBUG: error is \(error.localizedDescription)")
                     return
                 }
                 
-                guard let uid = Auth.auth().currentUser?.uid else { return }
-                Firestore.firestore().collection("users").document(uid).getDocument { (snapshot, error) in
-                    
-                    if let error = error {
-                        debugPrint(error.localizedDescription)
-                        return
-                    }
-                    
-                    guard let data = snapshot?.data() else { return }
-                    
-                    print(data)
-                    
-                }
+                
+
                 
                 self.dismiss(animated: true)
             }

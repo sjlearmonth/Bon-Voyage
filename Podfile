@@ -9,5 +9,5 @@ target 'Bon Voyage' do
   pod 'Firebase/Auth'
   pod 'Firebase/Functions'
   pod 'Firebase/Firestore'
-  pod 'Stripe'
+  pod 'Stripe', '~> 21.1'
 end
