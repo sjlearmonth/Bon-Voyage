@@ -37,6 +37,7 @@ class HomeVC: UIViewController {
                 self.present(logInVC, animated: true)
             } else {
                 UserManager.instance.getCurrentUser {
+//                    print("DEBUG: got here 2 stripeId = \(UserManager.instance.user?.stripeId)")
                     self.setupStripe()
                 }
             }

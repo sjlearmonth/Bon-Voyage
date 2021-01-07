@@ -58,6 +58,37 @@ exports.createEphemeralKey = functions.https.onCall(async (data, context) => {
 
 })
 
+exports.createPaymentIntent = functions.https.onCall( async (data, context) => {
+
+  const total = data.total
+  const idempotency = data.idempotency
+  const customer = data.customer_id
+
+  const uid = context.auth.uid;
+
+  if (uid == null) {
+    console.log('Illegal access attempt due to unauthenticated user access attempt')
+    throw new functions.https.HttpsError('internal', 'Illegal access attempt');
+  }
+
+  return stripe.paymentIntents.create(
+    {
+      amount: total,
+      currency: 'usd',
+      customer: customer,
+      payment_method_types: ['card', 'ach_debit']
+    },
+    {
+      idempotencyKey: idempotency
+    }
+  ).then( intent => {
+    return intent.client_secret
+  }).catch( error => {
+    functions.logger.log('Unable to create Stripe Payment Intent')
+    return null
+  })
+})
+
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
 

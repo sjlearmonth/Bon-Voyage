@@ -107,9 +107,6 @@ class LogInRegisterVC: UIViewController {
                     return
                 }
                 
-                
-
-                
                 self.dismiss(animated: true)
             }
         }

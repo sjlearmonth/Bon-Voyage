@@ -7,21 +7,19 @@
 
 import Foundation
 
-class FessCalculator {
+class FeesCalculator {
     
     private static let stripeCreditCardCut = 0.029
     private static let flatFeeCents = 30
     
     static func calculateFeesForCard(subTotal: Int) -> Int {
         
-        if subTotal == 0 {
-            return 0
+        var fees = 0
+        if subTotal > 0 {
+            fees = Int(Double(subTotal) * stripeCreditCardCut) + flatFeeCents
         }
-        
-        // vacation = 999
-        let fees = Int(Double(subTotal) + stripeCreditCardCut) + flatFeeCents
-        
         return fees
+        
     }
     
 }
