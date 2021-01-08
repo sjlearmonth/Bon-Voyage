@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseFirestore
 import Stripe
 
 class HomeVC: UIViewController {
@@ -22,7 +23,7 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         
         title = "Vacation Packages"
-        vacations = demoData
+        fetchVacations()
                 
         setupTableView()
     }
@@ -37,7 +38,6 @@ class HomeVC: UIViewController {
                 self.present(logInVC, animated: true)
             } else {
                 UserManager.instance.getCurrentUser {
-//                    print("DEBUG: got here 2 stripeId = \(UserManager.instance.user?.stripeId)")
                     self.setupStripe()
                 }
             }
@@ -52,6 +52,33 @@ class HomeVC: UIViewController {
         tableView.tableFooterView = UIView()
         tableView.contentInset.top = 8
         tableView.register(UINib(nibName: CellId.VacationCell, bundle: nil), forCellReuseIdentifier: CellId.VacationCell)
+    }
+    
+    private func fetchVacations() {
+        
+        guard let _ = Auth.auth().currentUser else { return }
+        
+        Firestore.firestore().collection("vacations").addSnapshotListener { (snapshot, error) in
+            
+            if let error = error {
+                print("DEBUG: \(error.localizedDescription)")
+                return
+            }
+            
+            var vacations = [Vacation]()
+            guard let docs = snapshot?.documents else { return }
+            
+            docs.forEach { (doc) in
+                let data = doc.data()
+                let vacation = Vacation.init(data: data)
+                vacations.append(vacation)
+            }
+            
+            self.vacations = vacations
+            self.tableView.reloadData()
+            
+        }
+        
     }
 
     @IBAction func userIconClicked(_ sender: Any) {
