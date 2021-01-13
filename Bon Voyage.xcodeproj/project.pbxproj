@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3299DBA3A0B59DB1A9D22B79 /* Pods_Bon_Voyage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0401F1C0C08E83EBC8D55F7 /* Pods_Bon_Voyage.framework */; };
+		598DC5614BC5C15705CD192A /* Pods_Bon_Voyage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B408BEF7DBB9DBDD32213B45 /* Pods_Bon_Voyage.framework */; };
 		C405B5712562DCBF003CFDF4 /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C405B5702562DCBF003CFDF4 /* CheckoutVC.swift */; };
 		C405B5762562F0D0003CFDF4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C405B5752562F0D0003CFDF4 /* Constants.swift */; };
 		C45508C02562D8A20027A80F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C45508BF2562D8A20027A80F /* SDWebImage */; };
@@ -31,7 +31,6 @@
 		C4817C2F25A61479002A284E /* StripeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4817C2E25A61479002A284E /* StripeAPIClient.swift */; };
 		C4817C3225A619B9002A284E /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4817C3125A619B9002A284E /* Wallet.swift */; };
 		C4817C4A25A6299D002A284E /* FeesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4817C4925A6299D002A284E /* FeesCalculator.swift */; };
-		C4CAA47C25643C7F008D0FE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4CAA47B25643C7F008D0FE8 /* GoogleService-Info.plist */; };
 		C4CAA48A25644806008D0FE8 /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CAA48925644806008D0FE8 /* ViewController+Ext.swift */; };
 		C4CAA48D25644985008D0FE8 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CAA48C25644985008D0FE8 /* String+Ext.swift */; };
 		C4F184E62507E99600E32E4B /* Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F184E52507E99600E32E4B /* Integer.swift */; };
@@ -40,10 +39,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8683F6E43D9C1048FB7CF991 /* Pods-Bon Voyage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bon Voyage.release.xcconfig"; path = "Target Support Files/Pods-Bon Voyage/Pods-Bon Voyage.release.xcconfig"; sourceTree = "<group>"; };
-		93C9AD96F6766EB0120CB9C2 /* Pods-Bon Voyage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bon Voyage.debug.xcconfig"; path = "Target Support Files/Pods-Bon Voyage/Pods-Bon Voyage.debug.xcconfig"; sourceTree = "<group>"; };
+		06CA8FAF5B117D1B09EBBE6F /* Pods-Bon Voyage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bon Voyage.release.xcconfig"; path = "Target Support Files/Pods-Bon Voyage/Pods-Bon Voyage.release.xcconfig"; sourceTree = "<group>"; };
+		324A2DFC5DB2CBBB8D20C6B6 /* Pods-Bon Voyage.production-bon-voyage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bon Voyage.production-bon-voyage.xcconfig"; path = "Target Support Files/Pods-Bon Voyage/Pods-Bon Voyage.production-bon-voyage.xcconfig"; sourceTree = "<group>"; };
+		473C4C8E8F2E236AD4A32D9C /* Pods-Bon Voyage.dev-bon-voyage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bon Voyage.dev-bon-voyage.xcconfig"; path = "Target Support Files/Pods-Bon Voyage/Pods-Bon Voyage.dev-bon-voyage.xcconfig"; sourceTree = "<group>"; };
+		B408BEF7DBB9DBDD32213B45 /* Pods_Bon_Voyage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bon_Voyage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C405B5702562DCBF003CFDF4 /* CheckoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutVC.swift; sourceTree = "<group>"; };
 		C405B5752562F0D0003CFDF4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C468B20E25AF4DFA00936201 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C468B21025AF502000936201 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "Bon Voyage/Firebase/Production/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C46A80F525013D07009FBA5A /* DemoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
 		C46A80F825013D9A009FBA5A /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		C46A80F925013D9A009FBA5A /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -66,13 +69,12 @@
 		C4817C2E25A61479002A284E /* StripeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeAPIClient.swift; sourceTree = "<group>"; };
 		C4817C3125A619B9002A284E /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		C4817C4925A6299D002A284E /* FeesCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesCalculator.swift; sourceTree = "<group>"; };
-		C4CAA47B25643C7F008D0FE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C4CAA48925644806008D0FE8 /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
 		C4CAA48C25644985008D0FE8 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		C4F184E52507E99600E32E4B /* Integer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Integer.swift; sourceTree = "<group>"; };
 		C4F184E72507EBF900E32E4B /* VacationDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationDetailsVC.swift; sourceTree = "<group>"; };
 		C4F184E925091F1C00E32E4B /* ThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCell.swift; sourceTree = "<group>"; };
-		D0401F1C0C08E83EBC8D55F7 /* Pods_Bon_Voyage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bon_Voyage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C53CEB1AE41A6C32762AF50E /* Pods-Bon Voyage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bon Voyage.debug.xcconfig"; path = "Target Support Files/Pods-Bon Voyage/Pods-Bon Voyage.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,19 +83,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				C45508C02562D8A20027A80F /* SDWebImage in Frameworks */,
-				3299DBA3A0B59DB1A9D22B79 /* Pods_Bon_Voyage.framework in Frameworks */,
+				598DC5614BC5C15705CD192A /* Pods_Bon_Voyage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C45508BE2562D8910027A80F /* Frameworks */ = {
+		535701D7D00FC11DF11474DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D0401F1C0C08E83EBC8D55F7 /* Pods_Bon_Voyage.framework */,
+				B408BEF7DBB9DBDD32213B45 /* Pods_Bon_Voyage.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C468B20B25AF480700936201 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				C468B20D25AF481B00936201 /* Development */,
+				C468B20C25AF480E00936201 /* Production */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		C468B20C25AF480E00936201 /* Production */ = {
+			isa = PBXGroup;
+			children = (
+				C468B21025AF502000936201 /* GoogleService-Info.plist */,
+			);
+			name = Production;
+			path = "../New Group/Production";
+			sourceTree = "<group>";
+		};
+		C468B20D25AF481B00936201 /* Development */ = {
+			isa = PBXGroup;
+			children = (
+				C468B20E25AF4DFA00936201 /* GoogleService-Info.plist */,
+			);
+			path = Development;
 			sourceTree = "<group>";
 		};
 		C46A80F725013D71009FBA5A /* Custom Views */ = {
@@ -139,8 +167,8 @@
 			children = (
 				C46DF8EC24FEB5AF0028F37B /* Bon Voyage */,
 				C46DF8EB24FEB5AF0028F37B /* Products */,
-				C45508BE2562D8910027A80F /* Frameworks */,
 				F162ADB7750F316C29251BE3 /* Pods */,
+				535701D7D00FC11DF11474DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +183,7 @@
 		C46DF8EC24FEB5AF0028F37B /* Bon Voyage */ = {
 			isa = PBXGroup;
 			children = (
+				C468B20B25AF480700936201 /* Firebase */,
 				C4817C2C25A61428002A284E /* Stripe */,
 				C4817C2725A608BF002A284E /* Services */,
 				C405B5752562F0D0003CFDF4 /* Constants.swift */,
@@ -171,7 +200,6 @@
 				C46DF8EF24FEB5AF0028F37B /* SceneDelegate.swift */,
 				C46DF8F324FEB5AF0028F37B /* Main.storyboard */,
 				C46DF8F624FEB5B00028F37B /* Assets.xcassets */,
-				C4CAA47B25643C7F008D0FE8 /* GoogleService-Info.plist */,
 				C46DF8F824FEB5B00028F37B /* LaunchScreen.storyboard */,
 				C46DF8FB24FEB5B00028F37B /* Info.plist */,
 			);
@@ -209,8 +237,10 @@
 		F162ADB7750F316C29251BE3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				93C9AD96F6766EB0120CB9C2 /* Pods-Bon Voyage.debug.xcconfig */,
-				8683F6E43D9C1048FB7CF991 /* Pods-Bon Voyage.release.xcconfig */,
+				C53CEB1AE41A6C32762AF50E /* Pods-Bon Voyage.debug.xcconfig */,
+				473C4C8E8F2E236AD4A32D9C /* Pods-Bon Voyage.dev-bon-voyage.xcconfig */,
+				06CA8FAF5B117D1B09EBBE6F /* Pods-Bon Voyage.release.xcconfig */,
+				324A2DFC5DB2CBBB8D20C6B6 /* Pods-Bon Voyage.production-bon-voyage.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -222,11 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C46DF91424FEB5B00028F37B /* Build configuration list for PBXNativeTarget "Bon Voyage" */;
 			buildPhases = (
-				377FDD98E3582A5CF964705A /* [CP] Check Pods Manifest.lock */,
+				381EA1083732B6F85310B6E5 /* [CP] Check Pods Manifest.lock */,
 				C46DF8E624FEB5AF0028F37B /* Sources */,
 				C46DF8E724FEB5AF0028F37B /* Frameworks */,
+				C468B21125AF514600936201 /* Setup Firebase Env */,
 				C46DF8E824FEB5AF0028F37B /* Resources */,
-				DDD916D990A9D2D1627C3F80 /* [CP] Embed Pods Frameworks */,
+				E1A9C71AD4256548D36191DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -285,14 +316,13 @@
 				C46DF8F524FEB5AF0028F37B /* Main.storyboard in Resources */,
 				C46A810A2502A8A7009FBA5A /* VacationCell.xib in Resources */,
 				C46A8101250141AA009FBA5A /* LogInRegisterVC.xib in Resources */,
-				C4CAA47C25643C7F008D0FE8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		377FDD98E3582A5CF964705A /* [CP] Check Pods Manifest.lock */ = {
+		381EA1083732B6F85310B6E5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -314,7 +344,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DDD916D990A9D2D1627C3F80 /* [CP] Embed Pods Frameworks */ = {
+		C468B21125AF514600936201 /* Setup Firebase Env */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Setup Firebase Env";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Name of the resource we're selectively copying\nGOOGLESERVICE_INFO_PLIST=GoogleService-Info.plist\n\n# Get references to dev and prod versions of the GoogleService-Info.plist\n# NOTE: These should only live on the file system and should NOT be part of the target (since we'll be adding them to the target manually)\nGOOGLESERVICE_INFO_DEV=${PROJECT_DIR}/\"Bon Voyage\"/Firebase/Development/${GOOGLESERVICE_INFO_PLIST}\nGOOGLESERVICE_INFO_PROD=${PROJECT_DIR}/\"Bon Voyage\"/Firebase/Production/${GOOGLESERVICE_INFO_PLIST}\n\n# Make sure the dev version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_DEV}\"\nif [[ ! -f $GOOGLESERVICE_INFO_DEV ]] \nthen\necho \"No Development GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\nexit 1\nfi\n\n# Make sure the prod version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_PROD}\"\nif [[ ! -f $GOOGLESERVICE_INFO_PROD ]]\nthen\necho \"No Production GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\nexit 1\nfi\n\n# Get a reference to the destination location for the GoogleService-Info.plist\nPLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\necho \"Will copy ${GOOGLESERVICE_INFO_PLIST} to final destination: ${PLIST_DESTINATION}\"\n\n# Copy over the prod GoogleService-Info.plist for Release builds\nif [ \"${CONFIGURATION}\" == \"production-bon-voyage\" ]\nthen\necho \"Using ${GOOGLESERVICE_INFO_PROD}\"\ncp \"${GOOGLESERVICE_INFO_PROD}\" \"${PLIST_DESTINATION}\"\nelse\necho \"Using ${GOOGLESERVICE_INFO_DEV}\"\ncp \"${GOOGLESERVICE_INFO_DEV}\" \"${PLIST_DESTINATION}\"\nfi\n";
+		};
+		E1A9C71AD4256548D36191DB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -385,6 +433,166 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C410053F25AC9DEB00342BE8 /* dev-bon-voyage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "dev-bon-voyage";
+		};
+		C410054025AC9DEB00342BE8 /* dev-bon-voyage */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 473C4C8E8F2E236AD4A32D9C /* Pods-Bon Voyage.dev-bon-voyage.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon.dev;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 555CBMTQ4N;
+				INFOPLIST_FILE = "Bon Voyage/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sjlearmonth.Bon-Voyage-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "dev-bon-voyage";
+		};
+		C410054125AC9E1300342BE8 /* production-bon-voyage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "production-bon-voyage";
+		};
+		C410054225AC9E1300342BE8 /* production-bon-voyage */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324A2DFC5DB2CBBB8D20C6B6 /* Pods-Bon Voyage.production-bon-voyage.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 555CBMTQ4N;
+				INFOPLIST_FILE = "Bon Voyage/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sjlearmonth.Bon-Voyage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRODUCTION;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "production-bon-voyage";
+		};
 		C46DF91224FEB5B00028F37B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -503,7 +711,7 @@
 		};
 		C46DF91524FEB5B00028F37B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93C9AD96F6766EB0120CB9C2 /* Pods-Bon Voyage.debug.xcconfig */;
+			baseConfigurationReference = C53CEB1AE41A6C32762AF50E /* Pods-Bon Voyage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -524,7 +732,7 @@
 		};
 		C46DF91624FEB5B00028F37B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8683F6E43D9C1048FB7CF991 /* Pods-Bon Voyage.release.xcconfig */;
+			baseConfigurationReference = 06CA8FAF5B117D1B09EBBE6F /* Pods-Bon Voyage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -550,7 +758,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C46DF91224FEB5B00028F37B /* Debug */,
+				C410053F25AC9DEB00342BE8 /* dev-bon-voyage */,
 				C46DF91324FEB5B00028F37B /* Release */,
+				C410054125AC9E1300342BE8 /* production-bon-voyage */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -559,7 +769,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C46DF91524FEB5B00028F37B /* Debug */,
+				C410054025AC9DEB00342BE8 /* dev-bon-voyage */,
 				C46DF91624FEB5B00028F37B /* Release */,
+				C410054225AC9E1300342BE8 /* production-bon-voyage */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

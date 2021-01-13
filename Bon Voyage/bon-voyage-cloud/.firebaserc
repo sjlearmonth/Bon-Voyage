@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "bon-voyage-9ac80"
+    "production": "bon-voyage-9ac80",
+    "dev": "bon-voyage-dev-a906c"
   }
 }

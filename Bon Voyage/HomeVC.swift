@@ -23,9 +23,12 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         
         title = "Vacation Packages"
-        fetchVacations()
-                
         setupTableView()
+        fetchVacations()
+        
+        #if DEV
+            simpleAlert(message: "Hey! Remember you are in dev environment")
+        #endif
     }
     
     override func viewWillAppear(_ animated: Bool) {

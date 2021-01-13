@@ -16,7 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        #if DEV
         StripeAPI.defaultPublishableKey = "pk_test_51HtbmNLGVtvBdffSWzWpUk8M2LYShJoYbPfvpAqFJGRb91uCiLlUXeYESpyQBnCZv1LQrdTSPU5R3vJT31k4LuqJ00Hy9YRUeL"
+        #else
+        StripeAPI.defaultPublishableKey = "pk_test_51HtbmNLGVtvBdffSWzWpUk8M2LYShJoYbPfvpAqFJGRb91uCiLlUXeYESpyQBnCZv1LQrdTSPU5R3vJT31k4LuqJ00Hy9YRUeL"
+        #endif
+        
         FirebaseApp.configure()
         return true
     }

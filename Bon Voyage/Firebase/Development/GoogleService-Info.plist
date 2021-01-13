@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>231319792690-88qck62663l5fe59e186kvvle8dlneui.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.231319792690-88qck62663l5fe59e186kvvle8dlneui</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCJ0oaIqu4jYKeg0UpZDbWO8KHmJ90y-4o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>231319792690</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sjlearmonth.Bon-Voyage-dev</string>
+	<key>PROJECT_ID</key>
+	<string>bon-voyage-dev-a906c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bon-voyage-dev-a906c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:231319792690:ios:4f1cdddb0206038801e02b</string>
+</dict>
+</plist>
