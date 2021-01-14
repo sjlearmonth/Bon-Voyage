@@ -26,9 +26,9 @@ class HomeVC: UIViewController {
         setupTableView()
         fetchVacations()
         
-        #if DEV
-            simpleAlert(message: "Hey! Remember you are in dev environment")
-        #endif
+//        #if DEV
+//            simpleAlert(message: "Hey! Remember you are in dev environment")
+//        #endif
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -93,6 +93,7 @@ class HomeVC: UIViewController {
             // Logout
             do {
                 try Auth.auth().signOut()
+                print("DEBUG: got here")
             } catch {
                 print("DEBUG: \(error.localizedDescription)")
             }

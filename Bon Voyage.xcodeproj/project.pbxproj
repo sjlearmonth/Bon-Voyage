@@ -45,8 +45,8 @@
 		B408BEF7DBB9DBDD32213B45 /* Pods_Bon_Voyage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bon_Voyage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C405B5702562DCBF003CFDF4 /* CheckoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutVC.swift; sourceTree = "<group>"; };
 		C405B5752562F0D0003CFDF4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		C468B20E25AF4DFA00936201 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C468B21025AF502000936201 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "Bon Voyage/Firebase/Production/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C468B21A25B0A2E600936201 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C468B21F25B0B5D500936201 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C46A80F525013D07009FBA5A /* DemoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
 		C46A80F825013D9A009FBA5A /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		C46A80F925013D9A009FBA5A /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -101,27 +101,26 @@
 		C468B20B25AF480700936201 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				C468B21925B0A1FF00936201 /* Production */,
 				C468B20D25AF481B00936201 /* Development */,
-				C468B20C25AF480E00936201 /* Production */,
 			);
 			path = Firebase;
-			sourceTree = "<group>";
-		};
-		C468B20C25AF480E00936201 /* Production */ = {
-			isa = PBXGroup;
-			children = (
-				C468B21025AF502000936201 /* GoogleService-Info.plist */,
-			);
-			name = Production;
-			path = "../New Group/Production";
 			sourceTree = "<group>";
 		};
 		C468B20D25AF481B00936201 /* Development */ = {
 			isa = PBXGroup;
 			children = (
-				C468B20E25AF4DFA00936201 /* GoogleService-Info.plist */,
+				C468B21F25B0B5D500936201 /* GoogleService-Info.plist */,
 			);
 			path = Development;
+			sourceTree = "<group>";
+		};
+		C468B21925B0A1FF00936201 /* Production */ = {
+			isa = PBXGroup;
+			children = (
+				C468B21A25B0A2E600936201 /* GoogleService-Info.plist */,
+			);
+			path = Production;
 			sourceTree = "<group>";
 		};
 		C46A80F725013D71009FBA5A /* Custom Views */ = {
