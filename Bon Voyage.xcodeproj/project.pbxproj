@@ -31,6 +31,7 @@
 		C4817C2F25A61479002A284E /* StripeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4817C2E25A61479002A284E /* StripeAPIClient.swift */; };
 		C4817C3225A619B9002A284E /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4817C3125A619B9002A284E /* Wallet.swift */; };
 		C4817C4A25A6299D002A284E /* FeesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4817C4925A6299D002A284E /* FeesCalculator.swift */; };
+		C4A6968125E7F6550094D076 /* PlaidApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A6968025E7F6550094D076 /* PlaidApi.swift */; };
 		C4CAA48A25644806008D0FE8 /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CAA48925644806008D0FE8 /* ViewController+Ext.swift */; };
 		C4CAA48D25644985008D0FE8 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CAA48C25644985008D0FE8 /* String+Ext.swift */; };
 		C4F184E62507E99600E32E4B /* Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F184E52507E99600E32E4B /* Integer.swift */; };
@@ -69,6 +70,7 @@
 		C4817C2E25A61479002A284E /* StripeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeAPIClient.swift; sourceTree = "<group>"; };
 		C4817C3125A619B9002A284E /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		C4817C4925A6299D002A284E /* FeesCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesCalculator.swift; sourceTree = "<group>"; };
+		C4A6968025E7F6550094D076 /* PlaidApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaidApi.swift; sourceTree = "<group>"; };
 		C4CAA48925644806008D0FE8 /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
 		C4CAA48C25644985008D0FE8 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		C4F184E52507E99600E32E4B /* Integer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Integer.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				C468B20B25AF480700936201 /* Firebase */,
+				C4A6967F25E7F62A0094D076 /* Plaid */,
 				C4817C2C25A61428002A284E /* Stripe */,
 				C4817C2725A608BF002A284E /* Services */,
 				C405B5752562F0D0003CFDF4 /* Constants.swift */,
@@ -221,6 +224,14 @@
 				C4817C4925A6299D002A284E /* FeesCalculator.swift */,
 			);
 			path = Stripe;
+			sourceTree = "<group>";
+		};
+		C4A6967F25E7F62A0094D076 /* Plaid */ = {
+			isa = PBXGroup;
+			children = (
+				C4A6968025E7F6550094D076 /* PlaidApi.swift */,
+			);
+			path = Plaid;
 			sourceTree = "<group>";
 		};
 		C4F184E42507E97600E32E4B /* Extensions */ = {
@@ -400,6 +411,7 @@
 				C46A81092502A8A7009FBA5A /* VacationCell.swift in Sources */,
 				C46A80FC25013D9A009FBA5A /* CardView.swift in Sources */,
 				C46DF8F024FEB5AF0028F37B /* SceneDelegate.swift in Sources */,
+				C4A6968125E7F6550094D076 /* PlaidApi.swift in Sources */,
 				C4F184EA25091F1C00E32E4B /* ThumbnailCell.swift in Sources */,
 				C4817C3225A619B9002A284E /* Wallet.swift in Sources */,
 				C4F184E62507E99600E32E4B /* Integer.swift in Sources */,

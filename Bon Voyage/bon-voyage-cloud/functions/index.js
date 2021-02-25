@@ -62,7 +62,7 @@ exports.createPaymentIntent = functions.https.onCall( async (data, context) => {
 
   const total = data.total
   const idempotency = data.idempotency
-  const customer = data.customer_id
+  const customer = context.auth.uid
 
   const uid = context.auth.uid;
 
@@ -88,6 +88,42 @@ exports.createPaymentIntent = functions.https.onCall( async (data, context) => {
     return null
   })
 })
+
+// PLAID
+const plaid = require('plaid');
+
+exports.createPlaidLinkToken = functions.https.onCall(async (data, context) => {
+
+  const customerId = context.auth.uid
+
+  const plaidClient = new plaid.Client({
+    clientID: functions.config().plaid.client_id,
+    secret: functions.config().plaid.secret,
+    env: plaid.environments.sandbox,
+    options: {
+      version: '2019-05-29'
+    }
+  })
+
+  return plaidClient.createLinkToken({
+    user: {
+      client_user_id: customerId
+    },
+    client_name: 'Bon Voyage',
+    products: ['auth'],
+    country_codes: ['US'],
+    language: 'en'
+  })
+  .then((apiResponse) => {
+    const linkToken = apiResponse.link_token
+    return linkToken
+  })
+  .catch((err) => {
+    functions.logger.log(err)
+    throw new functions.https.HttpsError('internal', 'Unable to create plaid link token: ' + err)
+  })
+})
+
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions

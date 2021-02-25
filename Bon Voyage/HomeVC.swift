@@ -107,6 +107,9 @@ class HomeVC: UIViewController {
         
         let manageBankAccounts = UIAlertAction(title: "Manage Bank Accounts", style: .default) { (action) in
             // Display Bank Accounts
+            PlaidApi.createLinkToken { linkToken in
+                print(linkToken)
+            }
         }
         
         let closeAlertAction = UIAlertAction(title: "Close", style: .cancel)
