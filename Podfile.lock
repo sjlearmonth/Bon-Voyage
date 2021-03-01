@@ -306,6 +306,7 @@ PODS:
     - nanopb/encode (= 1.30906.0)
   - nanopb/decode (1.30906.0)
   - nanopb/encode (1.30906.0)
+  - Plaid (2.0.9)
   - PromisesObjC (1.2.10)
   - Stripe (21.1.0)
 
@@ -313,6 +314,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
   - Firebase/Functions
+  - Plaid
   - Stripe (~> 21.1)
 
 SPEC REPOS:
@@ -332,6 +334,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - Plaid
     - PromisesObjC
     - Stripe
 
@@ -351,9 +354,10 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
+  Plaid: f544acc3850621baa83bd7a9dd23fe4a19d7ae12
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   Stripe: 006b519b33936ebd9508bd2ade2311fdbe8bbd4c
 
-PODFILE CHECKSUM: 9e950dc0c8502516a1a7dd8d869a253d4a76799d
+PODFILE CHECKSUM: b0e5bd318baae0f1cecea92ca76589a2b49cb59e
 
 COCOAPODS: 1.10.0

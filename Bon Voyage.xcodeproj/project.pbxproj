@@ -26,6 +26,9 @@
 		C46DF8F524FEB5AF0028F37B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46DF8F324FEB5AF0028F37B /* Main.storyboard */; };
 		C46DF8F724FEB5B00028F37B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C46DF8F624FEB5B00028F37B /* Assets.xcassets */; };
 		C46DF8FA24FEB5B00028F37B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46DF8F824FEB5B00028F37B /* LaunchScreen.storyboard */; };
+		C47AFD7525ED4A13004FEAB4 /* ManageBankAccountsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AFD7325ED4A13004FEAB4 /* ManageBankAccountsVC.swift */; };
+		C47AFD7625ED4A13004FEAB4 /* ManageBankAccountsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C47AFD7425ED4A13004FEAB4 /* ManageBankAccountsVC.xib */; };
+		C47AFD9025ED5563004FEAB4 /* PlaidExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AFD8F25ED5563004FEAB4 /* PlaidExtension.swift */; };
 		C4817C2525A606FE002A284E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4817C2425A606FE002A284E /* User.swift */; };
 		C4817C2925A608D5002A284E /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4817C2825A608D5002A284E /* UserManager.swift */; };
 		C4817C2F25A61479002A284E /* StripeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4817C2E25A61479002A284E /* StripeAPIClient.swift */; };
@@ -65,6 +68,9 @@
 		C46DF8F624FEB5B00028F37B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C46DF8F924FEB5B00028F37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C46DF8FB24FEB5B00028F37B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C47AFD7325ED4A13004FEAB4 /* ManageBankAccountsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageBankAccountsVC.swift; sourceTree = "<group>"; };
+		C47AFD7425ED4A13004FEAB4 /* ManageBankAccountsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManageBankAccountsVC.xib; sourceTree = "<group>"; };
+		C47AFD8F25ED5563004FEAB4 /* PlaidExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaidExtension.swift; sourceTree = "<group>"; };
 		C4817C2425A606FE002A284E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C4817C2825A608D5002A284E /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		C4817C2E25A61479002A284E /* StripeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeAPIClient.swift; sourceTree = "<group>"; };
@@ -230,6 +236,9 @@
 			isa = PBXGroup;
 			children = (
 				C4A6968025E7F6550094D076 /* PlaidApi.swift */,
+				C47AFD7325ED4A13004FEAB4 /* ManageBankAccountsVC.swift */,
+				C47AFD7425ED4A13004FEAB4 /* ManageBankAccountsVC.xib */,
+				C47AFD8F25ED5563004FEAB4 /* PlaidExtension.swift */,
 			);
 			path = Plaid;
 			sourceTree = "<group>";
@@ -325,6 +334,7 @@
 				C46DF8F724FEB5B00028F37B /* Assets.xcassets in Resources */,
 				C46DF8F524FEB5AF0028F37B /* Main.storyboard in Resources */,
 				C46A810A2502A8A7009FBA5A /* VacationCell.xib in Resources */,
+				C47AFD7625ED4A13004FEAB4 /* ManageBankAccountsVC.xib in Resources */,
 				C46A8101250141AA009FBA5A /* LogInRegisterVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,11 +406,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C47AFD7525ED4A13004FEAB4 /* ManageBankAccountsVC.swift in Sources */,
 				C405B5712562DCBF003CFDF4 /* CheckoutVC.swift in Sources */,
 				C46A80F625013D07009FBA5A /* DemoData.swift in Sources */,
 				C4817C2925A608D5002A284E /* UserManager.swift in Sources */,
 				C46A80FB25013D9A009FBA5A /* RoundedButton.swift in Sources */,
 				C4817C4A25A6299D002A284E /* FeesCalculator.swift in Sources */,
+				C47AFD9025ED5563004FEAB4 /* PlaidExtension.swift in Sources */,
 				C4817C2F25A61479002A284E /* StripeAPIClient.swift in Sources */,
 				C4CAA48D25644985008D0FE8 /* String+Ext.swift in Sources */,
 				C46A81052502A42C009FBA5A /* Vacation.swift in Sources */,

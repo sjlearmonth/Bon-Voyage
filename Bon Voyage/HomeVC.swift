@@ -45,7 +45,6 @@ class HomeVC: UIViewController {
                 }
             }
         }
-
     }
     
     private func setupTableView() {
@@ -79,9 +78,7 @@ class HomeVC: UIViewController {
             
             self.vacations = vacations
             self.tableView.reloadData()
-            
         }
-        
     }
 
     @IBAction func userIconClicked(_ sender: Any) {
@@ -99,17 +96,15 @@ class HomeVC: UIViewController {
             }
         }
     
-        
         let manageCreditCards = UIAlertAction(title: "Manage Credit Cards", style: .default) { (action) in
             // Display Stripe Widget
             self.paymentContext.pushPaymentOptionsViewController()
         }
         
         let manageBankAccounts = UIAlertAction(title: "Manage Bank Accounts", style: .default) { (action) in
-            // Display Bank Accounts
-            PlaidApi.createLinkToken { linkToken in
-                print(linkToken)
-            }
+            let vc = ManageBankAccountsVC()
+            vc.modalPresentationStyle = .automatic
+            self.present(vc, animated: true, completion: nil)
         }
         
         let closeAlertAction = UIAlertAction(title: "Close", style: .cancel)

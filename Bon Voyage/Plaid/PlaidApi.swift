@@ -17,7 +17,7 @@ class PlaidApi {
                 return completion(nil)
             }
             
-            guard let linkToken = result?.data as? String else { print("Got here 2"); return completion(nil) }
+            guard let linkToken = result?.data as? String else { return completion(nil) }
 
             completion(linkToken)
         }

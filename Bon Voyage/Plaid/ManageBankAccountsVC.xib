@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManageBankAccountsVC" customModule="Bon_Voyage" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="cCu-iw-KuG" id="rvN-NQ-8MG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Bank Accounts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usx-Fu-4SD">
+                    <rect key="frame" x="118" y="64" width="178" height="25.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNh-ZW-ycs" customClass="RoundedButton" customModule="Bon_Voyage" customModuleProvider="target">
+                    <rect key="frame" x="20" y="842" width="374" height="40"/>
+                    <color key="backgroundColor" name="btn_dark_blue"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="B0u-QL-lpZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <state key="normal" title="Connect Bank Account">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addBankAccountClicked:" destination="-1" eventType="touchUpInside" id="mUE-aL-kMY"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cCu-iw-KuG">
+                    <rect key="frame" x="0.0" y="97.5" width="414" height="736.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NNh-ZW-ycs" secondAttribute="trailing" constant="20" id="HzM-iu-Gyz"/>
+                <constraint firstItem="usx-Fu-4SD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Oj7-9f-7Vz"/>
+                <constraint firstItem="NNh-ZW-ycs" firstAttribute="top" secondItem="cCu-iw-KuG" secondAttribute="bottom" constant="8" id="ZLr-sM-P0j"/>
+                <constraint firstItem="NNh-ZW-ycs" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="20" id="arY-ht-u68"/>
+                <constraint firstItem="NNh-ZW-ycs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="lMb-N3-c68"/>
+                <constraint firstItem="cCu-iw-KuG" firstAttribute="top" secondItem="usx-Fu-4SD" secondAttribute="bottom" constant="8" id="rjd-RK-J8Q"/>
+                <constraint firstItem="cCu-iw-KuG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="spx-1f-BLy"/>
+                <constraint firstItem="usx-Fu-4SD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="uIT-uJ-U35"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cCu-iw-KuG" secondAttribute="trailing" id="zlE-OV-GVU"/>
+            </constraints>
+            <point key="canvasLocation" x="-206" y="51"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="NNh-ZW-ycs">
+            <size key="intrinsicContentSize" width="192" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="btn_dark_blue">
+            <color red="0.32941176470588235" green="0.44705882352941179" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
