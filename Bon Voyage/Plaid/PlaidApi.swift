@@ -18,7 +18,7 @@ class PlaidApi {
             }
             
             guard let linkToken = result?.data as? String else { return completion(nil) }
-
+            print("DEBUG: reuqest_id is \(linkToken)")
             completion(linkToken)
         }
     }

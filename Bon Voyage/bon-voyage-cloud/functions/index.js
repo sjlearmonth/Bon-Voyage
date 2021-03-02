@@ -116,11 +116,53 @@ exports.createPlaidLinkToken = functions.https.onCall(async (data, context) => {
   })
   .then((apiResponse) => {
     const linkToken = apiResponse.link_token
+    // const request_id = apiResponse.request_id
+
     return linkToken
+    // return request_id
   })
   .catch((err) => {
     functions.logger.log(err)
     throw new functions.https.HttpsError('internal', 'Unable to create plaid link token: ' + err)
+  })
+})
+
+exports.createPlaidBankAccount = functions.https.onCall(async (data, context) => {
+
+  const token = data.publicToken
+  const custId = data.stripeId
+  const bankAccountId = data.accountId
+
+  const plaidClient = new plaid.Client({
+    clientID: functions.config().plaid.client_id,
+    secret: functions.config().plaid.secret,
+    env: plaid.environments.sandbox,
+    options: {
+      version: '2019-05-29'
+    }
+  })
+
+  return plaidClient.exchangePublicToken(token)
+  .then(res => {
+
+    const accessToken = res.access_token
+    functions.logger.log("access token is: " + accessToken)
+    return plaidClient.createStripeToken(accessToken, bankAccountId)
+
+  })
+  .then(resp => {
+
+    const bankAccountToken  = resp.stripe_bank_account_token
+    return stripe.customers.createSource(custId, {
+      source: bankAccountToken
+    })
+  }).then(bank => {
+    return bank
+  })
+
+  .catch((err) => {
+    functions.logger.log(err)
+    throw new functions.https.HttpsError('internal', 'Unable to create plaid bank account: ' + err)
   })
 })
 
